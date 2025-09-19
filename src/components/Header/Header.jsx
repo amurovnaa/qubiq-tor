@@ -43,11 +43,11 @@ const Header = () => {
           >
             {menuOpen ? (
               <svg className={clsx(styles.icon, styles.iconCloseMenu)}>
-                <use href="/public/sprite.svg#icon-closeMenu"></use>
+                <use href="/sprite.svg#icon-closeMenu"></use>
               </svg>
             ) : (
               <svg className={clsx(styles.icon, styles.iconOpenMenu)}>
-                <use href="/public/sprite.svg#icon-openMenu"></use>
+                <use href="/sprite.svg#icon-openMenu"></use>
               </svg>
             )}
           </button>

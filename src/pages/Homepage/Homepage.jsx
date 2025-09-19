@@ -43,7 +43,7 @@ const Homepage = () => {
               <button className={styles.secondaryBtn}>
                 <span>Learn More</span>
                 <svg className={clsx(styles.icon, styles.iconRightArrow)}>
-                  <use href="/public/sprite.svg#iconRightArrow"></use>
+                  <use href="/sprite.svg#iconRightArrow"></use>
                 </svg>
               </button>
             </li>
