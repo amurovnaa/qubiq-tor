@@ -4,7 +4,6 @@ import Header from "../../components/Header/Header.jsx";
 import styles from "./Homepage.module.css";
 import heroImg from "../../img/hero.png";
 import heroTabletImg from "../../img/hero-tablet.png";
-import sprite from "../../assets/sprite.svg";
 const Homepage = () => {
   return (
     <>
@@ -44,7 +43,7 @@ const Homepage = () => {
               <button className={styles.secondaryBtn}>
                 <span>Learn More</span>
                 <svg className={clsx(styles.icon, styles.iconRightArrow)}>
-                  <use href="/src/assets/sprite.svg#iconRightArrow"></use>
+                  <use href="/public/sprite.svg#iconRightArrow"></use>
                 </svg>
               </button>
             </li>
