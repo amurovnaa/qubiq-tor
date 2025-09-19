@@ -2,6 +2,9 @@ import clsx from "clsx";
 import Container from "../../components/Container/Container.jsx";
 import Header from "../../components/Header/Header.jsx";
 import styles from "./Homepage.module.css";
+import heroImg from "../../img/hero.png";
+import heroTabletImg from "../../img/hero-tablet.png";
+import sprite from "../../assets/sprite.svg";
 const Homepage = () => {
   return (
     <>
@@ -15,7 +18,7 @@ const Homepage = () => {
                 <span className={styles.logoImgBox}>
                   <img
                     className={styles.logoImg}
-                    src="/src/img/hero.png"
+                    src={heroImg}
                     alt="Flower"
                   ></img>
                 </span>
@@ -29,7 +32,7 @@ const Homepage = () => {
 
             <img
               className={styles.tabletLogoImg}
-              src="/src/img/hero-tablet.png"
+              src={heroTabletImg}
               alt="Flower"
             ></img>
           </div>

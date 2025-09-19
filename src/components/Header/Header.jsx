@@ -2,6 +2,7 @@ import { useState } from "react";
 import styles from "./Header.module.css";
 import clsx from "clsx";
 import Container from "../Container/Container.jsx";
+import logo from "../../assets/logo.png";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -10,11 +11,7 @@ const Header = () => {
       <Container>
         <nav className={styles.navbar}>
           <div className={styles.logo}>
-            <img
-              className={styles.logoImg}
-              src="/src/assets/logo.png"
-              alt="logo"
-            ></img>
+            <img className={styles.logoImg} src={logo} alt="logo"></img>
             <span className={styles.logoText}>Backyard</span>
           </div>
 
