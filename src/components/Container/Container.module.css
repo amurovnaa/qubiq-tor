@@ -1,0 +1,36 @@
+.container {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media only screen and (min-width: 360px) {
+  .container {
+    width: 360px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 32px;
+    padding-right: 40px;
+  }
+}
+
+@media only screen and (min-width: 1278px) {
+  .container {
+    max-width: 1278px;
+    width: 100%;
+    padding-left: 84px;
+    padding-right: 84px;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .container {
+    max-width: 1920px;
+    width: 100%;
+    padding-left: 275px;
+    padding-right: 275px;
+  }
+}
