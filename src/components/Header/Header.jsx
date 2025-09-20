@@ -3,6 +3,8 @@ import styles from "./Header.module.css";
 import clsx from "clsx";
 import Container from "../Container/Container.jsx";
 import logo from "../../assets/logo.png";
+import { Link } from "react-router-dom";
+
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -10,10 +12,10 @@ const Header = () => {
     <header className={styles.header}>
       <Container>
         <nav className={styles.navbar}>
-          <div className={styles.logo}>
-            <img className={styles.logoImg} src={logo} alt="logo"></img>
+          <Link className={styles.logo} to="/">
+            <img className={styles.logoImg} src={logo} alt="logo" />
             <span className={styles.logoText}>Backyard</span>
-          </div>
+          </Link>
 
           <ul className={styles.navLinks}>
             <li className={styles.navLinkActive}>
