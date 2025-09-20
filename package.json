@@ -12,9 +12,11 @@
   "dependencies": {
     "clsx": "^2.1.1",
     "clx": "^1.0.0",
+    "keen-slider": "^6.8.6",
     "modern-normalize": "^3.0.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "react-transition-group": "^4.4.5",
     "vite-plugin-svg-sprite": "^0.6.3"
   },
   "devDependencies": {

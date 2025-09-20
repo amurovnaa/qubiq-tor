@@ -17,6 +17,8 @@
   color: #303030;
   margin-bottom: 14px;
   align-items: center;
+  transition: font-size 0.3s ease, color 0.3s ease, margin 0.3s ease,
+    transform 0.3s ease;
 }
 
 .subtitle {
@@ -24,6 +26,8 @@
   font-weight: 400;
   font-size: 20px;
   color: rgba(38, 38, 38, 0.55);
+  transition: font-size 0.3s ease, color 0.3s ease, margin 0.3s ease,
+    transform 0.3s ease;
 }
 
 .logoImg {
@@ -32,6 +36,8 @@
   display: inline;
   margin-right: 18px;
   margin-left: 18px;
+  transition: font-size 0.3s ease, color 0.3s ease, margin 0.3s ease,
+    transform 0.3s ease;
 }
 .buttons {
   display: flex;
@@ -58,6 +64,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+.primaryBtn:hover,
+.primaryBtn:active {
+  background: #3b3b3b;
+  transform: scale(1.05);
 }
 .secondaryBtn {
   border-radius: 38px;
@@ -78,6 +90,12 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
+  transition: all 0.3s ease-in-out;
+}
+.secondaryBtn:hover,
+.secondaryBtn:active {
+  color: rgba(46, 46, 46, 0.75);
+  transform: scale(1.05);
 }
 .icon {
   display: inline-block;
@@ -91,6 +109,17 @@
 }
 .tabletLogoImg {
   display: none;
+}
+.backyard {
+  padding-top: 34px;
+  margin-bottom: 33px;
+}
+.backyardTitle {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 110%;
+  color: #303030;
 }
 /* ============= TABLET ============= */
 @media (min-width: 768px) {
@@ -142,6 +171,9 @@
   }
   .iconRightArrow {
     display: none;
+  }
+  .backyardTitle {
+    margin-bottom: 36px;
   }
 }
 

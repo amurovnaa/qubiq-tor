@@ -66,15 +66,33 @@
   display: none;
 }
 .mobileMenu {
+  position: fixed;
+  top: 60px;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
   backdrop-filter: blur(9.300000190734863px);
   background: #e8e9ed;
   border: 1px solid #e4e4e9;
   border-radius: 19px;
   padding: 13px 14px 14px 14px;
-  max-width: 176px;
-  min-height: 202px;
   margin-top: 6px;
   margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  opacity: 0;
+  transform: translateY(-20px);
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.mobileMenu.open {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 .mobileMenuList {
   display: flex;
@@ -101,7 +119,15 @@
   font-size: 13px;
   text-align: center;
   color: #e8e9ed;
+  transition: all 0.3s ease-in-out;
 }
+.connectMenuBtn:hover,
+.connectMenuBtn:active {
+  background: #3b3b3b;
+  transform: scale(1.05);
+}
+
+/* ============= TABLET ============= */
 @media (min-width: 768px) {
   .header {
     margin-top: 20px;
@@ -126,6 +152,11 @@
     font-size: 11px;
     text-align: center;
     color: #fbfbfc;
+  }
+  .connectBtn:hover,
+  .connectBtn:active {
+    background: #3b3b3b;
+    transition: background-color 0.3s ease-in-out;
   }
   .navLinks {
     visibility: visible;
@@ -159,6 +190,7 @@
   }
 }
 
+/* ============= DESKTOP ============= */
 @media (min-width: 1278px) {
   .header {
     margin-bottom: 32px;

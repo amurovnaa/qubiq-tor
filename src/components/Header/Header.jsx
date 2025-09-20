@@ -54,7 +54,9 @@ const Header = () => {
         </nav>
 
         {menuOpen && (
-          <div className={styles.mobileMenu}>
+          <div
+            className={`${styles.mobileMenu} ${menuOpen ? styles.open : ""}`}
+          >
             <ul className={styles.mobileMenuList}>
               <li>
                 <a href="#home">Home</a>

@@ -4,6 +4,7 @@ import Header from "../../components/Header/Header.jsx";
 import styles from "./Homepage.module.css";
 import heroImg from "../../img/hero.png";
 import heroTabletImg from "../../img/hero-tablet.png";
+import CardSlider from "../../components/CardSlider/CardSlider.jsx";
 const Homepage = () => {
   return (
     <>
@@ -48,6 +49,10 @@ const Homepage = () => {
               </button>
             </li>
           </ul>
+        </section>
+        <section className={styles.backyard}>
+          <h2 className={styles.backyardTitle}>What is Backyard?</h2>
+          <CardSlider />
         </section>
       </Container>
     </>
