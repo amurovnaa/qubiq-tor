@@ -105,8 +105,14 @@
   font-weight: 500;
   font-size: 14px;
   color: #7a7a7a;
+  transition: all 0.3s ease-in-out;
 }
-
+.mobileMenuList li:hover {
+  color: rgba(46, 46, 46, 0.75);
+}
+.mobileMenuList .linkActive {
+  color: #303030;
+}
 .connectMenuBtn {
   border: 1px solid #ebebed;
   border-radius: 100px;
@@ -179,8 +185,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 100px;
+    transition: all 0.3s ease-in-out;
   }
-
+  .navLinks li:hover {
+    color: #fbfbfc;
+    background-color: rgba(46, 46, 46, 0.75);
+    transform: scale(1.05);
+  }
+  .navLinks .navLinkActive {
+    color: #fbfbfc;
+    background-color: #303030;
+    border-radius: 100px;
+  }
   .actions {
     display: block;
     visibility: visible;

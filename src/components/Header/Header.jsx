@@ -16,7 +16,7 @@ const Header = () => {
           </div>
 
           <ul className={styles.navLinks}>
-            <li>
+            <li className={styles.navLinkActive}>
               <a href="#home">Home</a>
             </li>
             <li>
@@ -58,7 +58,7 @@ const Header = () => {
             className={`${styles.mobileMenu} ${menuOpen ? styles.open : ""}`}
           >
             <ul className={styles.mobileMenuList}>
-              <li>
+              <li className={styles.linkActive}>
                 <a href="#home">Home</a>
               </li>
               <li>
